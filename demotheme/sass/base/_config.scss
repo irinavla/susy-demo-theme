@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 14, 2017, 12:24:15 PM
+    Author     : irina
+*/
+$susy:  (
+    flow: ltr,// layout direction
+    output: float, // uses CSS floats
+    math: fluid, // fluid | static use math:static with fixed column width
+    container: 1000px, // width or auto 
+    container-position: center, //| ex. 100px gives you grid margin
+    column-width: false, // false or pixel width
+    columns: 10,
+    gutters: 1/4, // the gutters are the same size as a column
+    gutter-position: split, // before | after | split | inside | inside-static (requires column-width)
+    global-box-sizing: border-box, // border-box
+);
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+/* custom layouts */
+$wide_layout: (
+    container: 100%, // width or auto
+    columns:14,
+    math:fluid,
+    output:float,
+    gutter-position: inside,
+  
+);
+
